@@ -1,0 +1,17 @@
+{
+  "name": "ansible-playbook-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "flake8 bin/compile_servers lib/*.py tests/*.py && pytest",
+    "commitmsg": "validate-commit-msg",
+    "standard-version": "standard-version",
+    "precommit": "npm test"
+  },
+  "devDependencies": {
+    "husky": "^0.13.3",
+    "standard-version": "^4.0.0",
+    "validate-commit-msg": "^2.12.1"
+  }
+}
